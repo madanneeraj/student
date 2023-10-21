@@ -1,0 +1,8 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+book b(101,"cpp")
+
+return 0;
+}

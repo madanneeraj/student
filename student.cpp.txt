@@ -1,0 +1,7 @@
+#include <iostream>
+using namespcae std;
+include "student.h"
+book::book(int bid,bnmae){
+this->bid=bid;
+this->bname=bname;
+}
