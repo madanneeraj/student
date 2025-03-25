@@ -1,18 +1,6 @@
-# Use a base image (Node.js in this example)
-FROM node:18-alpine
-
-# Set the working directory inside the container
+FROM gcc:latest
 WORKDIR /app
-
-# Copy package files and install dependencies
-COPY package*.json ./
-RUN npm install
-
-# Copy all project files
 COPY . .
+RUN g++ -o student tester.cpp.txt student.cpp.txt
+CMD ["./student"]
 
-# Expose the port (if it's a web app)
-EXPOSE 3000
-
-# Define the default command
-CMD ["npm", "start"]
